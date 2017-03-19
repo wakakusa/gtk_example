@@ -1,0 +1,11 @@
+step1
+gcc -shared -O2 -o liblibrary.so library.c
+
+step2
+gcc -llibrary -L=/home/hiro/Projects/library/test/01.simple -O0 -otest main.c
+
+step3
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/hiro/Projects/library/test/02.cmake/src/
+
+step4
+./test

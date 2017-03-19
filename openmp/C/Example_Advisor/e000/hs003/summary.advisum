@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY" >
+  <hotspot filename="/home/hiro/Projects/openmp/C/openmp.c"
+           line_no="39"
+           routine="main"
+           cpu_time="2.993187E-02"
+           priority="2"
+           id="1"/>
+  <hotspot filename="/home/hiro/Projects/openmp/C/openmp.c"
+           line_no="30"
+           routine="main"
+           cpu_time="1.297054E-01"
+           priority="3"
+           id="2"/>
+  <hotspot filename="/home/hiro/Projects/openmp/C/openmp.c"
+           line_no="20"
+           routine="main"
+           cpu_time="2.460137E+00"
+           priority="4"
+           id="3"/>
+  <hotspot filename="/home/hiro/Projects/openmp/C/openmp.c"
+           line_no="11"
+           routine="main"
+           cpu_time="1.297023E+01"
+           priority="5"
+           id="4"/>
+</IntelParallelAdvisorSummary >

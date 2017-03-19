@@ -1,0 +1,3 @@
+./clear.sh
+cmake .
+make

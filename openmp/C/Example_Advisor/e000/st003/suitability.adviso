@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSuitabilityOptions SYSTEM  "IntelParallelAdvisorSuitabilityOptions.dtd"> -->
+
+<IntelParallelAdvisorSuitabilityOptions version="0.1" 
+                                        num_processors="8" 
+                                        threading_paradigm="openmp" >
+  <site pah="2" > 
+      <scaling cpu="8" 
+               threading_paradigm="openmp" 
+               site_overhead="true" 
+               task_overhead="true" 
+               task_chunking="false" 
+               lock_overhead="true" 
+               lock_contention="true" />
+  </site>
+  <site pah="15" > 
+      <scaling cpu="8" 
+               threading_paradigm="openmp" 
+               site_overhead="false" 
+               task_overhead="false" 
+               task_chunking="false" 
+               lock_overhead="true" 
+               lock_contention="true" />
+  </site>
+</IntelParallelAdvisorSuitabilityOptions >

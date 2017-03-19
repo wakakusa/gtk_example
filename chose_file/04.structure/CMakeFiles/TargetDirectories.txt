@@ -1,0 +1,1 @@
+/home/hiro/Projects/example/chose_file/04.structure/src/CMakeFiles/chosefile.dir

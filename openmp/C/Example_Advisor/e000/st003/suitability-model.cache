@@ -1,0 +1,237 @@
+(version 3 1)
+
+[ Errors]
+
+[ Sites ]
+(site MySite1 "/home/hiro/Projects/openmp/C/openmp.c" 10 MySite1
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 10 "0xe38" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21a14" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21959" NATIVE LOOP
+)
+(site MySite2 "/home/hiro/Projects/openmp/C/openmp.c" 29 MySite2
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 29 "0x10bb" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21a14" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21959" NATIVE LOOP
+)
+
+[ Tasks ]
+(itask MyTask1-1 "/home/hiro/Projects/openmp/C/openmp.c" 13 MyTask1-1
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 13 "0xea3" NATIVE CALL
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 11 "0xe43" NATIVE LOOP
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21a14" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21959" NATIVE LOOP
+)
+(itask MyTask1-2 "/home/hiro/Projects/openmp/C/openmp.c" 22 MyTask1-2
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 22 "0xfda" NATIVE CALL
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 20 "0xf7a" NATIVE LOOP
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21a14" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21959" NATIVE LOOP
+)
+(itask MyTask2-1 "/home/hiro/Projects/openmp/C/openmp.c" 32 MyTask2-1
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 32 "0x111a" NATIVE CALL
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 30 "0x10c6" NATIVE LOOP
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21a14" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21959" NATIVE LOOP
+)
+(itask MyTask2-2 "/home/hiro/Projects/openmp/C/openmp.c" 41 MyTask2-2
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 41 "0x1239" NATIVE CALL
+    "/home/hiro/Projects/openmp/C/openmp" main "/home/hiro/Projects/openmp/C/openmp.c" 39 "0x11e5" NATIVE LOOP
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21a14" NATIVE CALL
+    "/lib64/libc-2.17.so" __libc_start_main "" -1 "0x21959" NATIVE LOOP
+)
+
+[ Locks ]
+
+(stats
+    [total time] 706171105932
+    [site 0]
+        [instances] 1 699116161309 699116161309 699116161309 0 4.887634070034317e+23
+        [numLocks] 0
+    [site 1]
+        [instances] 1 6933913273 6933913273 6933913273 0 4.807915327748557e+19
+        [numLocks] 0
+    [task 0]
+        [instances] 1000000000 25303308 348 354463475554 0 7.659139729318760e+14
+        [num_sites] 1
+        [instance times in site 0 instances] 1000000000 25303308 348 354463475554 354437236313 7.659139729318760e+14
+        [total times in site 0 instances] 1 354463475554 354463475554 354463475554 0 1.256443555018212e+23
+        [counts in site 0 instances] 1 1000000000 1000000000 1000000000 0 1.000000000000000e+18
+    [task 1]
+        [instances] 1000000000 20470 339 344398656005 0 1.186304667525710e+14
+        [num_sites] 1
+        [instance times in site 0 instances] 1000000000 20470 339 344398656005 344398213530 1.186304667525710e+14
+        [total times in site 0 instances] 1 344398656005 344398656005 344398656005 0 1.186104342580503e+23
+        [counts in site 0 instances] 1 1000000000 1000000000 1000000000 0 1.000000000000000e+18
+    [task 2]
+        [instances] 10000000 13182 349 3528962172 0 1.248103499674000e+12
+        [num_sites] 2
+        [instance times in site 0 instances] 0 0 9223372036854775807 0 0 0.000000000000000e+00
+        [instance times in site 1 instances] 10000000 13182 349 3528962172 3528587423 1.248103499674000e+12
+        [total times in site 0 instances] 0 0 9223372036854775807 0 0 0.000000000000000e+00
+        [total times in site 1 instances] 1 3528962172 3528962172 3528962172 0 1.245357401140696e+19
+        [counts in site 0 instances] 0 0 9223372036854775807 0 0 0.000000000000000e+00
+        [counts in site 1 instances] 1 10000000 10000000 10000000 0 1.000000000000000e+14
+    [task 3]
+        [instances] 10000000 11850 337 3402537566 0 1.160473960454000e+12
+        [num_sites] 2
+        [instance times in site 0 instances] 0 0 9223372036854775807 0 0 0.000000000000000e+00
+        [instance times in site 1 instances] 10000000 11850 337 3402537566 3402149073 1.160473960454000e+12
+        [total times in site 0 instances] 0 0 9223372036854775807 0 0 0.000000000000000e+00
+        [total times in site 1 instances] 1 3402537566 3402537566 3402537566 0 1.157726188804120e+19
+        [counts in site 0 instances] 0 0 9223372036854775807 0 0 0.000000000000000e+00
+        [counts in site 1 instances] 1 10000000 10000000 10000000 0 1.000000000000000e+14
+    [pause time] 0.000000e+00
+)
+
+[ Program ]
+(para MySite1 1 1
+  (comp 761824 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 25303308 0 0 0 0 0)
+  )
+  (comp 30355 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 19023 0 0 0 0 0)
+  )
+  (comp 8479 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 12017 0 0 0 0 0)
+  )
+  (comp 4109 0 0 0 0 0)
+  (spawn MyTask1-1 1999999983 1024
+    (comp 349 0 0 0 0 0)
+  )
+  (spawn MyTask1-1 1 1024
+    (comp 836550972 0 0 0 0 0)
+  )
+  (comp 29298 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 13208 0 0 0 0 0)
+  )
+  (comp 70708 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 12317 0 0 0 0 0)
+  )
+  (comp 16112 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 19182 0 0 0 0 0)
+  )
+  (comp 13574 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 11400 0 0 0 0 0)
+  )
+  (comp 16738 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 11770 0 0 0 0 0)
+  )
+  (comp 3450 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 13617 0 0 0 0 0)
+  )
+  (comp 13299 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 83476 0 0 0 0 0)
+  )
+  (comp 12111 0 0 0 0 0)
+  (spawn MyTask1-1 1 1
+    (comp 16223 0 0 0 0 0)
+  )
+  (comp 21335 0 0 0 0 0)
+  (spawn MyTask1-2 1 1
+    (comp 15155 0 0 0 0 0)
+  )
+  (comp 13151 0 0 0 0 0)
+  (spawn MyTask1-2 1 1
+    (comp 20470 0 0 0 0 0)
+  )
+  (comp 31643 0 0 0 0 0)
+  (spawn MyTask1-2 1 1
+    (comp 11688 0 0 0 0 0)
+  )
+  (comp 79627 0 0 0 0 0)
+  (spawn MyTask1-2 1 1
+    (comp 11502 0 0 0 0 0)
+  )
+  (comp 37091 0 0 0 0 0)
+  (spawn MyTask1-2 1 1
+    (comp 12164 0 0 0 0 0)
+  )
+  (comp 252866846 0 0 0 0 0)
+)
+(para MySite2 1 1
+  (comp 170880 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 9732 0 0 0 0 0)
+  )
+  (comp 4115 0 0 0 0 0)
+  (spawn MyTask2-1 19999983 64
+    (comp 346 0 0 0 0 0)
+  )
+  (spawn MyTask2-1 1 16
+    (comp 11327853 0 0 0 0 0)
+  )
+  (comp 3033 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 10000 0 0 0 0 0)
+  )
+  (comp 17939 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 10494 0 0 0 0 0)
+  )
+  (comp 13126 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 11750 0 0 0 0 0)
+  )
+  (comp 25158 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 12764 0 0 0 0 0)
+  )
+  (comp 32044 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 11050 0 0 0 0 0)
+  )
+  (comp 24007 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 11244 0 0 0 0 0)
+  )
+  (comp 24359 0 0 0 0 0)
+  (spawn MyTask2-1 1 1
+    (comp 13182 0 0 0 0 0)
+  )
+  (comp 31350 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 11850 0 0 0 0 0)
+  )
+  (comp 3673 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 10894 0 0 0 0 0)
+  )
+  (comp 13027 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 10200 0 0 0 0 0)
+  )
+  (comp 15127 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 11829 0 0 0 0 0)
+  )
+  (comp 27691 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 11494 0 0 0 0 0)
+  )
+  (comp 18038 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 10491 0 0 0 0 0)
+  )
+  (comp 39892 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 10632 0 0 0 0 0)
+  )
+  (comp 9626 0 0 0 0 0)
+  (spawn MyTask2-2 1 1
+    (comp 10161 0 0 0 0 0)
+  )
+  (comp 1940450 0 0 0 0 0)
+)
+(comp 121031350 0 0 0 0 0)
+
+[ End ]

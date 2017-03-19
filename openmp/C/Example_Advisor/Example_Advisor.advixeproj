@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <rdmgr>
+  <timestamp type="u64_t">1378716197</timestamp>
+  <hostname type="string">openSUSE.site</hostname>
+  <os type="string">linux</os>
+  <product type="string">Intel® Advisor XE 2013 Update 3</product>
+  <buildNumber type="s32_t">283900</buildNumber>
+  <logicalCPUCount type="s32_t">8</logicalCPUCount>
+  <CPUFrequency type="s64_t">3400000000</CPUFrequency>
+ </rdmgr>
+ <All_Configurations-All_Platforms>
+  <searchDirs>
+   <searchCategory>
+    <category type="u8_t">1</category>
+    <searchDirectory>
+     <name type="string">/home/hiro/Projects/openmp/C</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">true</priority>
+    </searchDirectory>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">2</category>
+    <searchDirectory>
+     <name type="string">/home/hiro/Projects/openmp/C</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">true</priority>
+    </searchDirectory>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">3</category>
+    <searchDirectory>
+     <name type="string">/home/hiro/Projects/openmp/C</name>
+     <recursive type="bool">false</recursive>
+     <priority type="bool">true</priority>
+    </searchDirectory>
+   </searchCategory>
+   <searchCategory>
+    <category type="u8_t">4</category>
+   </searchCategory>
+  </searchDirs>
+  <excludeFiles type="bag"/>
+  <target_settings>
+   <result_dir type="string">/home/hiro/Projects/openmp/C/Example_Advisor</result_dir>
+   <selected_workload type="string">release</selected_workload>
+   <result_pattern type="string">r@@@{at}</result_pattern>
+   <workloads>
+    <launch type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+     <workload>
+      <targetName type="string">launch</targetName>
+      <result_directory.path type="string">/home/hiro/Projects/openmp/C/Example_Advisor/r@@@{at}</result_directory.path>
+      <search_directories type="bag"/>
+     </workload>
+    </launch>
+    <release type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+     <workload>
+      <targetName type="string">release</targetName>
+      <result_directory.path type="string">/home/hiro/Projects/openmp/C/Example_Advisor/r@@@{at}</result_directory.path>
+      <launch_app.app_to_launch type="string">/home/hiro/Projects/openmp/C/openmp</launch_app.app_to_launch>
+      <launch_app.working_folder type="string">/home/hiro/Projects/openmp/C/Example_Advisor</launch_app.working_folder>
+      <search_directories type="bag"/>
+     </workload>
+    </release>
+    <debug type="pointer" type_id="dasID_cctrl2::ApplicationWorkload" ptr_type="dasID_cctrl2::IWorkload">
+     <workload>
+      <targetName type="string">debug</targetName>
+      <result_directory.path type="string">/home/hiro/Projects/openmp/C/Example_Advisor/r@@@{at}</result_directory.path>
+     </workload>
+    </debug>
+   </workloads>
+  </target_settings>
+ </All_Configurations-All_Platforms>
+</root>

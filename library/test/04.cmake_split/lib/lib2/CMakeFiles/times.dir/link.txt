@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libtimes.so -o libtimes.so CMakeFiles/times.dir/library2.c.o 

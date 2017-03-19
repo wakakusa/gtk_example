@@ -1,0 +1,31 @@
+Collection has been started.
+Collection has stopped. Application exit code:  0
+Finalizing the result
+Clearing the database
+The database has been cleared, elapsed time is 0.054 seconds.
+Loading raw data to the database
+Loading data files
+Loading '14660-14665.0.trace' file
+Loading data files
+Updating precomputed scalar metrics
+Raw data has been loaded to the database, elapsed time is 0.248 seconds.
+Processing profile metrics and debug information
+Data transformations have been finished, elapsed time is 0.000 seconds.
+Setting data model parameters
+Resolving module symbols
+Resolving information for `openmp'
+Resolving information for `libc-2.17.so'
+Warning: Cannot locate symbols for file `/lib64/libc-2.17.so'.
+Symbol resolution has been finished, elapsed time is 0.147 seconds.
+Processing profile metrics and debug information
+Deferred data transformations have been finished, elapsed time is 0.007 seconds.
+Precomputing frequently used data
+Updating precomputed scalar metrics
+Precomputing frequently used data has been finished, elapsed time is 0.025 seconds.
+Setting data model parameters
+Data model parameters have been set, elapsed time is 0.012 seconds.
+Discarding redundant overtime data
+Saving the result
+Redundant overtime data has been discarded, elapsed time is 0.001 seconds.
+Raw collector data has been discarded, elapsed time is 0.000 seconds.
+Finalizing the result took 0.498 seconds.

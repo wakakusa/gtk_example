@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC -O3 -DNDEBUG   -shared -Wl,-soname,libmylibrary2.so -o libmylibrary2.so CMakeFiles/mylibrary2.dir/library2.c.o 

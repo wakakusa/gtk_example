@@ -1,0 +1,12 @@
+-r
+/home/hiro/Projects/openmp/C/Example_Advisor/e000/hs003
+-type
+cpu:stack
+--data-limit-mb=100
+--stack-stitching
+--follow-child
+--stackwalk=offline
+--search-dir
+sym:p=/home/hiro/Projects/openmp/C
+--
+/home/hiro/Projects/openmp/C/openmp

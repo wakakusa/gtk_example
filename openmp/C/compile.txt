@@ -1,0 +1,3 @@
+ icc openmp.c -o openmp -g -O0
+ 
+icc openmp.c -o openmp -g -O0 -I$ADVISOR_XE_2013_DIR/include

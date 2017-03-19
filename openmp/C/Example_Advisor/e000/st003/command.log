@@ -1,0 +1,1 @@
+/opt/intel/advisor_xe_2013/bin64/advixe-cl -collect suitability -follow-child -interval=10 -mrte-mode=auto -target-duration-type=short -data-limit=100 -project-dir /home/hiro/Projects/openmp/C/Example_Advisor -- /home/hiro/Projects/openmp/C/openmp

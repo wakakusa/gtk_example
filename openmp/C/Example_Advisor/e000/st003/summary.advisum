@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="0.1" 
+                             kind="DATAKIND_SUITABILITY" 
+                             duration_total="7.061711E+01"
+                             num_processors="8" 
+                             threading_paradigm="openmp" 
+                             program_max_gain="7.925643E+00" >
+  <site filename="/home/hiro/Projects/openmp/C/openmp.c" 
+        line_no="10" 
+        label="MySite1">
+    <suitability duration_total="6.991162E+01" 
+                 num_instances="1">
+      <estimated_speedup>
+       <scaling threading_paradigm="openmp" 
+                site_overhead="true" 
+                task_overhead="true" 
+                task_chunking="false" 
+                lock_overhead="true" 
+                lock_contention="true" >
+          <scale cpu="8" speedup="8.811086E+00" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <site filename="/home/hiro/Projects/openmp/C/openmp.c" 
+        line_no="29" 
+        label="MySite2">
+    <suitability duration_total="6.933913E-01" 
+                 num_instances="1">
+      <estimated_speedup>
+       <scaling threading_paradigm="openmp" 
+                site_overhead="false" 
+                task_overhead="false" 
+                task_chunking="false" 
+                lock_overhead="true" 
+                lock_contention="true" >
+          <scale cpu="8" speedup="8.786522E-02" />
+        </scaling>
+      </estimated_speedup>
+    </suitability>
+  </site>
+  <task filename="/home/hiro/Projects/openmp/C/openmp.c" 
+        line_no="13" 
+        label="MyTask1-1" 
+        duration_total="3.544635E+01" 
+        num_instances="1000000000" />
+  <task filename="/home/hiro/Projects/openmp/C/openmp.c" 
+        line_no="22" 
+        label="MyTask1-2" 
+        duration_total="3.443987E+01" 
+        num_instances="1000000000" />
+  <task filename="/home/hiro/Projects/openmp/C/openmp.c" 
+        line_no="32" 
+        label="MyTask2-1" 
+        duration_total="3.528962E-01" 
+        num_instances="10000000" />
+  <task filename="/home/hiro/Projects/openmp/C/openmp.c" 
+        line_no="41" 
+        label="MyTask2-2" 
+        duration_total="3.402538E-01" 
+        num_instances="10000000" />
+</IntelParallelAdvisorSummary >
